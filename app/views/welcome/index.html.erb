@@ -1,4 +1,4 @@
-<%if user_signed_in?%>
+<!--<%if user_signed_in?%>
 	<p>Bienvenido <%= current_user.email %></p>
 	<p><%= link_to "Cerrar sesion", destroy_user_session_path, method: :get %></p>
 <%else%>
@@ -6,4 +6,101 @@
 	<p>Si ya tienes una cuenta <%= link_to "Iniciar sesion", new_user_session_path %></p>
 <%end%>
 <h1>Welcome#index</h1>
-<p>Find me in app/views/welcome/index.html.erb</p>
+<p>Find me in app/views/welcome/index.html.erb</p>-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Ganguii - Coming Soon</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0" />
+<!-- CSS start here -->
+<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" media="screen">
+<link rel="stylesheet" type="text/css" href="css/styles.css" />
+<link rel="stylesheet" type="text/css" href="css/font-awesome.css">
+<link rel="stylesheet" type="text/css" href="css/animate.css" />
+<!-- CSS end here -->
+<!-- Google fonts start here -->
+<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Roboto:300' rel='stylesheet' type='text/css'>
+<!-- Google fonts end here -->
+</head>
+<body>
+<!-- Preloader start here -->
+<div id="preloader">
+  <div id="status"><img src="/img/logo.png" alt="TICTOC - Coming Soon HTML Template"></div>
+</div>
+<!-- Preloader end here -->
+<!-- Main container start here -->
+<section class="container main-wrapper">
+<!-- Logo start here -->
+  <section id="logo" class="fade-down">
+    <a href="#" title="TICTOC - Coming Soon HTML Template"><img src="/img/logo.png" alt="TICTOC - Coming Soon HTML Template"></a>
+  </section>
+<!-- Logo end here -->
+<!-- Slogan start here -->
+  <section class="slogan fade-down">
+    <p>Ganguii esta trabajando para poner en marcha un nuevo sitio que va a revolucionar la forma de <br>vender y comprar por internet. </p>
+  </section>
+<!-- Slogan end here -->
+<!-- Count Down start here -->
+<section class="count-down-wrapper fade-down">
+            <ul class="row count-down">                       
+              <li class="col-md-3 col-sm-6">   
+                <input class="knob days" data-readonly=true data-min="0" data-max="365" data-width="260" data-height="260" data-thickness="0.07" data-fgcolor="#834293" data-bgColor="#e1e2e6" data-angleOffset="180">
+                <span id="days-title">dias</span>
+              </li>    
+              <li class="col-md-3 col-sm-6"> 
+                <input class="knob hour" data-readonly=true data-min="0" data-max="24" data-width="260" data-height="260" data-thickness="0.07" data-fgcolor="#8EC541" data-bgColor="#e1e2e6" data-angleOffset="180">
+                <span id="hours-title">horas</span>
+              </li>    
+              <li class="col-md-3 col-sm-6"> 
+                <input class="knob minute" data-readonly=true data-min="0" data-max="60" data-width="260" data-height="260" data-thickness="0.07" data-fgcolor="#EF5A2A" data-bgColor="#e1e2e6" data-angleOffset="180">
+                <span id="mins-title">minutos</span>
+              </li>    
+              <li class="col-md-3 col-sm-6"> 
+                <input class="knob second" data-readonly=true data-min="0" data-max="60" data-width="260" data-height="260" data-thickness="0.07" data-fgcolor="#0CACEB" data-bgColor="#e1e2e6" data-angleOffset="180">
+                <span id="secs-title">segundos</span>
+              </li>                
+            </ul>              
+</section>
+<!-- Count Down end here -->
+<!-- Newsletter start here -->
+
+<!-- Newsletter end here -->
+<!-- Social icons start here -->
+<ul class="connect-us row fade-down">
+  <li><a href="https://www.facebook.com/pages/Ganguii/1568628720085171?ref=hl" class="fb"><i class="fa fa-facebook"></i></a></li>
+  <li><a href="#" class="twitter"><i class="fa fa-twitter"></i></a></li>
+  <li><a href="#" class="gplus"><i class="fa fa-google-plus"></i></a></li>
+  <li><a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a></li>
+  <li><a href="#" class="ytube"><i class="fa fa-youtube-play"></i></a></li>
+  <li><a href="#" class="pinterest"><i class="fa fa-pinterest-square"></i></a></li>
+</ul>
+<!-- Social icons end here -->
+<!-- Footer start here -->
+<footer class="fade-down">
+  <p>&copy; 2015. ganguii</p>
+</footer>
+<!-- Footer end here -->
+</section>
+<!-- Main container start here -->
+<!-- Javascript framework and plugins start here -->
+<script type="text/javascript" src="/js/jquery.js"></script> 
+<script type="text/javascript" src="/js/bootstrap.min.js"></script> 
+<script src="/js/jquery.validate.min.js"></script>
+<script src="/js/modernizr.js"></script> 
+<script type="text/javascript" src="/js/appear.js"></script> 
+<script type="text/javascript">
+    $(window).load(function() {
+      $('#status').fadeOut();
+      $('#preloader').delay(350).fadeOut('slow');
+      $('body').delay(350).css({'overflow':'visible'});
+    })
+</script> 
+<script src="/js/jquery.knob.js"></script>
+<script src="/js/jquery.ccountdown.js"></script>
+<script src="/js/init.js"></script>
+<script src="/js/general.js"></script>
+<!-- Javascript framework and plugins end here -->
+</body>
+</html>
